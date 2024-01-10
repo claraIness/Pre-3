@@ -1,0 +1,40 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu Banda</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div id="registro">
+    <h1>--CLASIFICADO DE MÚSICOS--</h1>
+        <h2>Registra tus datos</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="instrumento">Instrumento:</label>
+            <input type="text" id="instrumento" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" required>
+
+            <label for="genero">Género Pretendido:</label>
+            <input type="text" id="genero" required>
+
+            <label for="contacto">Contacto:</label>
+            <input type="text" id="contacto" required>
+
+            <button type="button" onclick="registrar()">Registrar</button>
+
+        </form>
+    </div>
+
+    <div id="lista">
+        <h2>Listado de Músicos</h2>
+        <ul id="musicoList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
