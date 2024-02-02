@@ -1,0 +1,5 @@
+[
+    {"nombre": "Juan Pérez", "telefono": "123456789", "estilo": "Pop", "experiencia": "Más de 2 años", "localidad": "Villa Mercedes"},
+    {"nombre": "María López", "telefono": "34575689", "estilo": "Rock", "experiencia": "1 año", "localidad": "San Luis"},
+    {"nombre": "Sol Báez", "telefono": "92359863", "estilo": "Clásico", "experiencia": "Ninguna", "localidad": "El Trapiche"}
+]
