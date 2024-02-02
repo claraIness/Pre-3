@@ -1,40 +1,66 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentra tu Banda</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Músicos</title>
 </head>
+
 <body>
-    <div id="registro">
-    <h1>--CLASIFICADO DE MÚSICOS--</h1>
-        <h2>Registra tus datos</h2>
-        <form id="registroForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
+    <div class="container mt-4">
+        <button type="button" class="btn btn-dark" onclick="toggleDarkMode()">Modo Oscuro</button>
+        <h1 class="mb-4">Registro de Músicos</h1>        
+        <form id="musicianForm">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="estilo">Estilo Musical:</label>
+                <select class="form-control" id="estilo" required>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Clasico">Clásico</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experiencia">Experiencia:</label>
+                <select class="form-control" id="experiencia" required>
+                    <option value="Ninguna">Ninguna</option>
+                    <option value="1 año">1 año</option>
+                    <option value="Más de 2 años">Más de 2 años</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="localidad">Localidad:</label>
+                <select class="form-control" id="localidad" required>
+                    <option value="Villa Mercedes">Villa Mercedes</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="El Trapiche">El Trapiche</option>
+                    <option value="Concarán">Concarán</option>
+                    <option value="San Francisco">San Francisco</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="agregarMusico()">Agregar Músico</button>
+            <button type="button" class="btn btn-secondary" onclick="cargarDatos()">Cargar Músicos</button>
 
-            <label for="instrumento">Instrumento:</label>
-            <input type="text" id="instrumento" required>
-
-            <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" required>
-
-            <label for="genero">Género Pretendido:</label>
-            <input type="text" id="genero" required>
-
-            <label for="contacto">Contacto:</label>
-            <input type="text" id="contacto" required>
-
-            <button type="button" onclick="registrar()">Registrar</button>
-
+            <div id="musicianList" class="mt-4"></div>
         </form>
+        <div id="musicianList" class="mt-4"></div>
     </div>
+ 
+    
+    <script src="main.js"></script>
 
-    <div id="lista">
-        <h2>Listado de Músicos</h2>
-        <ul id="musicoList"></ul>
-    </div>
-
-    <script src="app.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
