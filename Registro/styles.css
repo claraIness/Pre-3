@@ -1,42 +1,93 @@
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
 }
 
-#registro, #lista {
-  margin-bottom: 30px;
+h1 {
+  font-size: 24px; 
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
+.container {
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+}
+
+#musicianForm {
+  width: 100%; 
+}
+
+.btn-primary {
+  background-color: #FFE600;
+  border-color: #FFE600;
+}
+
+.btn-primary:hover {
+  background-color: #92908f;
+  border-color: #92908f;
+}
+
+.btn-secondary {
+  background-color: #FFE600;
+  border-color: #FFE600;
+}
+
+.btn-secondary:hover {
+  background-color: #92908f;
+  border-color: #92908f;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
 }
 
 label {
-  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
 }
 
-button {
-  margin-top: 10px;
-  cursor: pointer;
+.dark-mode body {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
-#musicoList {
-  list-style-type: none;
-  padding: 0;
+.dark-mode .container {
+  background-color: #333;
+  color: #fff;
 }
 
-li {
-  margin-bottom: 10px;
+.dark-mode .card {
+  border: 1px solid #555;
 }
 
-.musico-container {
-    border: 2px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 40%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
+.dark-mode label {
+  color: #ccc;
 }
+
+.btn-dark {
+  font-size: 12px; 
+  padding: 5px 10px; 
+}
+.btn-dark {
+  font-size: 12px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
